@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+    <title>Calculator Form</title>
+</head>
+
+<body>
+    <section class="billing-form">
+        <form id="paymentForm">
+            <h2>Card Details</h2>
+            <div class="input-box">
+                <div class="payment-box">
+                    <span>Name</span>
+                    <input type="text" id="name" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="payment-box">
+                    <span>Card Number</span>
+                    <input type="text" id="card-number" maxlength="19" placeholder="1234-5678-9012-3456" required>
+                </div>
+                <div class="payment-box">
+                    <span>Expiry Date</span>
+                    <input type="text" name="expiry" placeholder="MM/YY" required>
+                </div>
+                <div class="payment-box">
+                    <span>CVV/CVC</span>
+                    <input type="password" id="cvv" inputmode="numeric" pattern="[1-9]*" maxlength="4"
+                        placeholder="e.g. 1234" required>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="btn">
+        </form>
+    </section>
+    <script src="form.js"></script>
+</body>
+
+</html>

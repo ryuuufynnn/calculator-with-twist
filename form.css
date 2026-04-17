@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bgweb.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn .5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.billing-form {
+    width: 350px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    backdrop-filter: blur(20px);
+    color: white;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 40px;
+    height: 400px;
+    transition: transform .3s;
+}
+
+.billing-form:hover {
+    transform: scale(1.02);
+}
+
+.billing-form h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+ .billing-form .input-box {
+    margin: 0 30px 0 30px;
+ }
+
+.billing-form .input-box input[type="text"], input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: rgb(255, 255, 255) 2px solid;
+    background: transparent;
+    color: white;
+    padding-left: 5px;
+ } 
+
+ input[type="password"]::-ms-reveal {
+    filter: invert(100%);
+ }
+
+ input::placeholder {
+    color: white;
+    padding-left: 5px;
+ }
+
+span {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+    font-weight: 400;
+}
+
+.billing-form #btn {
+    background-color: red;
+    color: white;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.billing-form #btn:hover {
+    background-color: rgba(41, 39, 39, 0.6);
+    backdrop-filter: blur(13px);
+    border: 2px white solid;
+}
