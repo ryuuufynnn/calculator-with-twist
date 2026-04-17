@@ -35,6 +35,7 @@ body {
     padding: 30px;
     margin-top: 40px;
     height: 400px;
+    filter: drop-shadow(3px 3px 28px rgb(17, 148, 255));
     transition: transform .3s;
 }
 

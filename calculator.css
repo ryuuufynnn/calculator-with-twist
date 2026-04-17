@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(bgWeb.jpg);
+    background-color: rgb(14, 43, 77);
     background-position: center;
     background-size: cover;
 }
