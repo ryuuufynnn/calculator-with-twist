@@ -12,6 +12,6 @@ document.getElementById('paymentForm').addEventListener('submit', (e) => {
 
     localStorage.setItem('paymentDone', 'true');
 
-    window.location.href = 'calculator.html';
+    window.location.href = 'index.html';
 });
     
