@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(bgweb.jpg);
+    background: rgb(0, 32, 68);
     background-size: cover;
     background-position: center;
     animation: fadeIn .5s ease-in;
@@ -27,7 +27,7 @@ body {
 
 .billing-form {
     width: 350px;
-    background-color: transparent;
+    background-color: rgb(14, 43, 77);
     border: 2px solid rgb(255, 255, 255);
     backdrop-filter: blur(20px);
     color: white;
